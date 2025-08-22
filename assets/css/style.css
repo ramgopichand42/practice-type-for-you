@@ -1,0 +1,118 @@
+/* Main theme variables for light/dark mode */
+:root {
+  --primary: #2563eb;
+  --accent: #10b981;
+  --error: #ef4444;
+  --background: #f8fafc;
+  --text: #1e293b;
+  --card-bg: #fff;
+  --border-radius: 1em;
+  --shadow: 0 2px 8px rgba(0,0,0,0.05);
+  --finger-thumb: #fbbf24;
+  --finger-index: #34d399;
+  --finger-middle: #60a5fa;
+  --finger-ring: #a78bfa;
+  --finger-pinky: #f87171;
+}
+
+[data-theme="dark"] {
+  --background: #1e293b;
+  --text: #f8fafc;
+  --card-bg: #334155;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Body & layout */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  min-height: 100vh;
+  transition: background 0.2s, color 0.2s;
+}
+
+header, footer {
+  padding: 1em 2em;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+#theme-toggle {
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: var(--accent);
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em 3em 1em;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+
+.cta-btn {
+  font-size: 1.4em;
+  background: var(--primary);
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.cta-btn:hover {
+  background: var(--accent);
+  transform: scale(1.05);
+}
+
+.intro {
+  max-width: 600px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.features-list ul {
+  margin: 1em 0 0 1.5em;
+  list-style-type: disc;
+}
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 700px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .intro {
+    padding: 1em;
+  }
+}
+
+/* Utility classes */
+.hidden { display: none !important; }
