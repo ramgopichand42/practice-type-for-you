@@ -1,0 +1,5 @@
+<svg width="80" height="120" viewBox="0 0 80 120" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="40" cy="60" rx="30" ry="40" fill="#f5d6b4" stroke="#e2b285" stroke-width="2"/>
+  <rect x="30" y="90" width="20" height="20" rx="10" fill="#f5d6b4" stroke="#e2b285" stroke-width="2"/>
+  <text x="40" y="60" font-size="12" fill="#333" font-family="sans-serif" text-anchor="middle" alignment-baseline="middle">Hand</text>
+</svg>
