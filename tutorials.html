@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutorials — TypeMaster Pro</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-btn">← Home</a>
+    <h1>Tutorials</h1>
+    <button id="theme-toggle" aria-label="Toggle light/dark mode"></button>
+  </header>
+  <main>
+    <section class="tutorial-section">
+      <h2>Step-by-step Lessons</h2>
+      <div id="lesson-selector">
+        <label for="lang">Language:</label>
+        <select id="lang">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+        </select>
+        <label for="layout">Keyboard Layout:</label>
+        <select id="layout">
+          <option value="qwerty">QWERTY</option>
+          <option value="inscript">Inscript</option>
+          <option value="remington">Remington</option>
+        </select>
+      </div>
+      <div id="lesson-content">
+        <!-- JS will load lessons here -->
+      </div>
+      <div class="keyboard-visualizer">
+        <h3>Keyboard Visualizer</h3>
+        <div id="keyboard-diagram"></div>
+        <div class="color-legend">
+          <span style="color:var(--finger-thumb)">Thumb</span>
+          <span style="color:var(--finger-index)">Index</span>
+          <span style="color:var(--finger-middle)">Middle</span>
+          <span style="color:var(--finger-ring)">Ring</span>
+          <span style="color:var(--finger-pinky)">Pinky</span>
+        </div>
+      </div>
+      <div class="hand-diagram">
+        <h3>Hand Diagram</h3>
+        <div id="hand-diagram"></div>
+        <div class="color-legend">
+          <span style="color:var(--finger-thumb)">Thumb</span>
+          <span style="color:var(--finger-index)">Index</span>
+          <span style="color:var(--finger-middle)">Middle</span>
+          <span style="color:var(--finger-ring)">Ring</span>
+          <span style="color:var(--finger-pinky)">Pinky</span>
+        </div>
+      </div>
+      <section class="tips">
+        <h3>Tips for Success</h3>
+        <ul>
+          <li>Sit up straight, keep wrists relaxed</li>
+          <li>Fingers curved, rest on home row</li>
+          <li>Look at the screen, not the keyboard</li>
+          <li>Practice daily for best results</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/keyboard.js"></script>
+  <script src="assets/js/hand.js"></script>
+</body>
+</html>
